@@ -15,8 +15,6 @@ consultarLibro(){
                 this.libros.forEach((object: libro) => {
             if (object.getNombre () === nombreLibro) {
                 console.log("Ingrese Nombre del nuevo Libro");
-                let indice = this.libros.indexOf(object);
-                this.libros[indice].setNombre(ReadlineSync.question("Nombre del libro"))
             }
 
 }
@@ -26,9 +24,6 @@ consultarLibro(){
         libreria[numero]=libro;
         console.log(libreria);
     }
-    eliminarLibro() {
-        let posicion = ReadlineSync.question(libroEliminado);
-        libreria.splice(posicion, 1);
     }
     }
 }
